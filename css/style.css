@@ -382,6 +382,8 @@ section {
 }
 
 .tableline {
+  position: relative;
+  left: 4%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -434,6 +436,8 @@ section {
 }
 
 .propertySize {
+  position: relative;
+  left: 4%;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -525,23 +529,25 @@ section {
   color: #3d3d3d;
 }
 .application__sachet {
-  margin: -47px 0 -72px -14px;
+  margin: -47px 0 -72px -80px;
   font-family: "Krona One";
   font-weight: 400;
   font-size: 350px;
   color: #ededed;
 }
 .application__btn {
+  position: relative;
+  left: 9%;
   width: 530px;
   height: 93px;
-  position: relative;
-  left: 15px;
   margin: 167px 0 179px 0;
+}
+.application .table {
+  position: relative;
+  left: 6.5%;
 }
 
 .table {
-  position: relative;
-  left: 20px;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -596,4 +602,9 @@ section {
   color: #fff;
   cursor: pointer;
   transition: 0.4s;
+}
+
+.packing {
+  position: relative;
+  left: 4.5%;
 }/*# sourceMappingURL=style.css.map */

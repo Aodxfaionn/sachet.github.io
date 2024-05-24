@@ -394,6 +394,8 @@ section {
 }
 
 .tableline {
+  position: relative;
+    left: 4%;
   @include flex(space-between);
   align-items: start;
   margin-bottom: 300px;
@@ -444,6 +446,8 @@ section {
 }
 
 .propertySize {
+  position: relative;
+    left: 4%;
   @include flex(start);
   align-items: start;
   &__title {
@@ -536,25 +540,26 @@ section {
     color: #3d3d3d;
   }
   &__sachet {
-    margin: -47px 0 -72px -14px;
+    margin: -47px 0 -72px -80px;
     font-family: "Krona One";
     font-weight: 400;
     font-size: 350px;
     color: #ededed;
   }
   &__btn {
+    position: relative;
+    left: 9%;
     width: 530px;
     height: 93px;
-    position: relative;
-    left: 15px;
     margin: 167px 0 179px 0;
-
+  }
+  & .table {
+    position: relative;
+    left: 6.5%;
   }
 }
 
 .table {
-  position: relative;
-  left: 20px;
   @include flex(start);
   flex-wrap: wrap;
   &__item {
@@ -605,6 +610,11 @@ section {
   color: #fff;
   cursor: pointer;
   transition: 0.4s;
+}
+
+.packing {
+  position: relative;
+  left: 4.5%;
 }
 
 //Specially
