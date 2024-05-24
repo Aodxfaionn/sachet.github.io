@@ -380,6 +380,9 @@ section {
   margin-top: 490px;
   overflow-x: clip;
 }
+.property .tableline {
+  margin-bottom: 300px;
+}
 
 .tableline {
   position: relative;
@@ -388,7 +391,6 @@ section {
   align-items: center;
   justify-content: space-between;
   align-items: start;
-  margin-bottom: 300px;
 }
 .tableline h3 {
   margin-bottom: 35px;
@@ -505,15 +507,18 @@ section {
   mix-blend-mode: overlay;
 }
 
+.application {
+  position: relative;
+}
 .application__sub {
   position: absolute;
   left: 0;
-  bottom: 7%;
+  top: 57%;
 }
 .application__circle {
   position: absolute;
   right: 0;
-  bottom: 7%;
+  top: 57%;
 }
 .application__title {
   width: 515px;
@@ -607,4 +612,256 @@ section {
 .packing {
   position: relative;
   left: 4.5%;
+}
+
+.fasovka {
+  margin-top: 180px;
+}
+.fasovka__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  font-size: 31px;
+  text-transform: lowercase;
+  color: #463a3a;
+}
+.fasovka__view {
+  position: relative;
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fasovka__view > div {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fasovka__view > div > svg {
+  position: relative;
+  top: 225px;
+}
+.fasovka__circle {
+  position: relative;
+  z-index: 1;
+  width: 162px;
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(217, 217, 217, 0.6);
+  font-weight: 400;
+  font-size: 21px;
+  color: #fff;
+}
+.fasovka__circle span {
+  font-size: 53px;
+  color: #f8f8f8;
+  font-family: "Krona One";
+}
+.fasovka__circle-top {
+  top: 255px;
+}
+.fasovka__circle-top span {
+  font-size: 40px;
+}
+.fasovka__circle-top-bottom {
+  position: relative;
+}
+.fasovka__bigText {
+  position: absolute;
+  bottom: 82px;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 300px;
+  color: #ededed;
+  font-family: "Krona One";
+  transform: rotate(-90deg);
+}
+.fasovka__bigText::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  z-index: -2;
+  left: 223px;
+  bottom: -370px;
+  width: 1050px;
+  height: 1050px;
+  border-radius: 50%;
+  background: #cccdc5;
+}
+.fasovka__img {
+  position: relative;
+  top: 125px;
+}
+.fasovka__img-left {
+  position: absolute;
+  right: -40%;
+  top: 4%;
+  z-index: -1;
+}
+.fasovka__img-right {
+  position: absolute;
+  left: -21%;
+  top: 22%;
+  height: 77%;
+  z-index: -1;
+  transform: rotate(-32deg);
+}
+.fasovka__info {
+  width: 58%;
+  font-size: 22px;
+  line-height: 147%;
+  text-transform: lowercase;
+  text-align: center;
+}
+.fasovka + .tableline {
+  margin-top: 520px;
+}
+.fasovka + .tableline p {
+  width: 77%;
+}
+
+.napkin {
+  position: relative;
+}
+.napkin__hand {
+  position: absolute;
+}
+.napkin__hand-left {
+  left: 0;
+  top: -45%;
+}
+.napkin__hand-right {
+  right: 0;
+  top: -58%;
+}
+.napkin__title {
+  margin-top: 350px;
+  font-weight: 600;
+  font-size: 170px;
+  line-height: 80%;
+  color: #f1f1f1;
+}
+.napkin__title span {
+  margin-left: 18%;
+}
+.napkin__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 110px;
+  font-size: 22px;
+  line-height: 147%;
+  text-transform: lowercase;
+}
+.napkin__text div {
+  width: 42%;
+}
+.napkin__text p:not(:last-of-type) {
+  margin-bottom: 60px;
+}
+.napkin__btn {
+  width: 359px;
+  height: 64px;
+}
+
+.seam {
+  position: relative;
+  margin-top: 386px;
+}
+.seam__ellipse {
+  position: absolute;
+  left: 0;
+  fill: #e7e7e7;
+}
+.seam__img {
+  position: absolute;
+}
+.seam__img-left {
+  left: 0;
+}
+.seam__img-right {
+  right: 0;
+}
+.seam__img-rightbottom {
+  right: 0;
+}
+.seam__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 102%;
+  color: #fff;
+}
+.seam__info {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 65px;
+}
+.seam__info > p {
+  width: 255px;
+  font-size: 22px;
+  line-height: 147%;
+  text-transform: lowercase;
+}
+.seam__info > p:first-of-type {
+  position: relative;
+  left: 65px;
+}
+.seam__circle {
+  position: relative;
+  width: 768px;
+  height: 768px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='770' height='770' viewBox='0 0 770 770' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='385.036' cy='384.733' r='383.493' transform='rotate(155.186 385.036 384.733)' stroke='url(%23paint0_linear_2_779)' stroke-width='1.40969' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_2_779' x1='564.038' y1='-85.6912' x2='155.827' y2='768.932' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23282828' /%3E%3Cstop offset='1' stop-color='white' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.seam__circle img {
+  position: relative;
+  z-index: 2;
+}
+.seam__num {
+  position: absolute;
+  font-family: "Krona one";
+  font-weight: 400;
+  font-size: 82px;
+  color: #fff;
+}
+.seam__num-one {
+  top: 20px;
+}
+.seam__num-two {
+  left: 125px;
+}
+.seam__num-three {
+  right: 125px;
+}
+.seam__num-four {
+  bottom: 20px;
+  color: #000;
+}
+.seam:before {
+  content: "";
+  display: inline-block;
+  width: 150%;
+  height: 1px;
+  position: absolute;
+  bottom: 50%;
+  left: -19%;
+  z-index: 1;
+  background: linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(244, 242, 242) 85%);
+  transform: rotate(-39deg);
 }/*# sourceMappingURL=style.css.map */

@@ -391,14 +391,16 @@ section {
   position: relative;
   margin-top: 490px;
   overflow-x: clip;
+  & .tableline {
+    margin-bottom: 300px;
+  }
 }
 
 .tableline {
   position: relative;
-    left: 4%;
+  left: 4%;
   @include flex(space-between);
   align-items: start;
-  margin-bottom: 300px;
   & h3 {
     margin-bottom: 35px;
     padding: 22px 30px;
@@ -447,7 +449,7 @@ section {
 
 .propertySize {
   position: relative;
-    left: 4%;
+  left: 4%;
   @include flex(start);
   align-items: start;
   &__title {
@@ -512,15 +514,16 @@ section {
 }
 
 .application {
+  position: relative;
   &__sub {
     position: absolute;
     left: 0;
-    bottom: 7%;
+    top: 57%;
   }
   &__circle {
     position: absolute;
     right: 0;
-    bottom: 7%;
+    top: 57%;
   }
   &__title {
     width: 515px;
@@ -617,7 +620,246 @@ section {
   left: 4.5%;
 }
 
+.fasovka {
+  margin-top: 180px;
+  &__data {
+    @include flex;
+    gap: 150px;
+    font-size: 31px;
+    text-transform: lowercase;
+    color: #463a3a;
+  }
+  &__view {
+    position: relative;
+    margin-top: 130px;
+    @include flex(space-between);
+    & > div {
+      z-index: 1;
+      @include flex-col;
+      & > svg {
+        position: relative;
+        top: 225px;
+      }
+    }
+  }
+  &__circle {
+    position: relative;
+    z-index: 1;
+    width: 162px;
+    height: 162px;
+    @include flex-col;
+    border-radius: 50%;
+    background: rgba(217, 217, 217, 0.6);
+    font-weight: 400;
+    font-size: 21px;
+    color: #fff;
+    & span {
+      font-size: 53px;
+      color: #f8f8f8;
+      font-family: "Krona One";
+    }
+    &-top {
+      top: 255px;
+      & span {
+        font-size: 40px;
+      }
+      &-bottom {
+        position: relative;
+      }
+    }
+  }
+  &__bigText {
+    position: absolute;
+    bottom: 82px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 300px;
+    color: #ededed;
+    font-family: "Krona One";
+    transform: rotate(-90deg);
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      z-index: -2;
+      left: 223px;
+      bottom: -370px;
+      width: 1050px;
+      height: 1050px;
+      border-radius: 50%;
+      background: #cccdc5;
+    }
+  }
+  &__img {
+    position: relative;
+    top: 125px;
+    &-left {
+      position: absolute;
+      right: -40%;
+      top: 4%;
+      z-index: -1;
+    }
+    &-right {
+      position: absolute;
+      left: -21%;
+      top: 22%;
+      height: 77%;
+      z-index: -1;
+      transform: rotate(-32deg);
+    }
+  }
+  &__info {
+    width: 58%;
+    font-size: 22px;
+    line-height: 147%;
+    text-transform: lowercase;
+    text-align: center;
+  }
+  & + .tableline {
+    margin-top: 520px;
+    & p {
+      width: 77%;
+    }
+  }
+}
+
 //Specially
+.napkin {
+  position: relative;
+  &__hand {
+    position: absolute;
+    &-left {
+      left: 0;
+      top: -45%;
+    }
+    &-right {
+      right: 0;
+      top: -58%;
+    }
+  }
+  &__title {
+    margin-top: 350px;
+    font-weight: 600;
+    font-size: 170px;
+    line-height: 80%;
+    color: #f1f1f1;
+    & span {
+      margin-left: 18%;
+    }
+  }
+  &__text {
+    @include flex(space-between);
+    align-items: end;
+    margin-top: 110px;
+    font-size: 22px;
+    line-height: 147%;
+    text-transform: lowercase;
+    & div {
+      width: 42%;
+    }
+    & p:not(:last-of-type) {
+      margin-bottom: 60px;
+    }
+  }
+  &__btn {
+    width: 359px;
+    height: 64px;
+  }
+}
+
+.seam {
+  position: relative;
+  margin-top: 386px;
+  &__ellipse {
+    position: absolute;
+    left: 0;
+    fill: #e7e7e7;
+  }
+  &__img {
+    position: absolute;
+    &-left {
+      left: 0;
+    }
+    &-right {
+      right: 0;
+    }
+    &-rightbottom {
+      right: 0;
+    }
+  }
+  &__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 51px;
+    line-height: 102%;
+    color: #fff;
+  }
+  &__info {
+    margin-top: 120px;
+    @include flex;
+    gap: 65px;
+    & > p {
+      width: 255px;
+      font-size: 22px;
+      line-height: 147%;
+      text-transform: lowercase;
+      &:first-of-type {
+        position: relative;
+        left: 65px;
+      }
+    }
+  }
+  &__circle {
+    position: relative;
+    width: 768px;
+    height: 768px;
+    @include flex;
+    background-image: url("data:image/svg+xml,%3Csvg width='770' height='770' viewBox='0 0 770 770' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='385.036' cy='384.733' r='383.493' transform='rotate(155.186 385.036 384.733)' stroke='url(%23paint0_linear_2_779)' stroke-width='1.40969' /%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_2_779' x1='564.038' y1='-85.6912' x2='155.827' y2='768.932' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23282828' /%3E%3Cstop offset='1' stop-color='white' /%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    & img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__num {
+    position: absolute;
+    font-family: "Krona one";
+    font-weight: 400;
+    font-size: 82px;
+    color: #fff;
+    &-one {
+      top: 20px;
+    }
+    &-two {
+      left: 125px;
+    }
+    &-three {
+      right: 125px;
+    }
+    &-four {
+      bottom: 20px;
+      color: #000;
+    }
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 150%;
+    height: 1px;
+    position: absolute;
+    bottom: 50%;
+    left: -19%;
+    z-index: 1;
+    background: linear-gradient(
+      90deg,
+      rgba(190, 190, 190, 1) 0%,
+      rgba(244, 242, 242, 1) 85%
+    );
+    transform: rotate(-39deg);
+  }
+}
 
 //Partners
 
