@@ -147,7 +147,7 @@
           </div>
           <div class="tableline__text">
             <h3 class="tableline__text-border">Экономичность</h3>
-            <p>
+            <p class="tableline__text-ml">
               ДЛЯ ПРОИЗВОДИТЕЛЯ ПРОДАЖА МЕЛКО РАСФАСОВАННОГО ТОВАРА ВЫГОДНЕЕ,
               ЧЕМ В БОЛЬШИХ УПАКОВКАХ
             </p>
@@ -177,6 +177,7 @@
       </div>
       <div class="application">
         <img src="./css/img/subtract-3.png" class="application__sub" />
+        <img src="./css/img/subtract-3-shadow.png" class="application__shadow" />
         <img src="./css/img/circle.png" class="application__circle" />
         <div class="container-two">
           <h2 class="application__title">Сферы применения</h2>
@@ -318,7 +319,7 @@
           </svg>
         </div>
         <div class="fasovka__view">
-          <div>
+          <div  class="fasovka__left">
             <svg width="53" height="60" viewBox="0 0 53 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="26.7613" cy="7.01325" r="6.92731" fill="#FBFBFB" />
               <circle cx="26.7613" cy="29.8307" r="6.92731" fill="#FBFBFB" />
@@ -333,7 +334,7 @@
               <span>0,5</span>
             </p>
             <div class="fasovka__img">
-              <img src="./css/img/package-brown.png" alt="Package">
+              <img src="./css/img/package-brown.png" alt="Package" class="fasovka__img-leftmain">
               <img src="./css/img/subtract-4.png" class="fasovka__img-left">
             </div>
             <p class="fasovka__circle fasovka__circle-bottom">
@@ -343,7 +344,7 @@
             <p class="fasovka__info">НАПОЛЕНИЕ СУХОГО ПРОДУКТА В ПАКЕТЫ ОТ 0,5Г ДО 5Г</p>
           </div>
           <p class="fasovka__bigText">Sachet</p>
-          <div>
+          <div  class="fasovka__right">
             <svg width="54" height="68" viewBox="0 0 54 68" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.46459 23.8701L9.465 23.8695C13.4625 17.9857 19.3407 11.5775 27.1758 4.64894C35.0108 11.5773 40.8903 17.9855 44.8903 23.8695L9.46459 23.8701ZM9.46459 23.8701C5.1455 30.2237 3.21098 35.6877 3.21098 40.3354M9.46459 23.8701L3.21098 40.3354M3.21098 40.3354C3.21098 47.4134 5.54492 53.079 10.1547 57.5587M3.21098 40.3354L10.1547 57.5587M10.1547 57.5587C14.8136 62.0862 20.4306 64.3432 27.1757 64.3432M10.1547 57.5587L27.1757 64.3432M27.1757 64.3432C33.9208 64.3432 39.5379 62.0862 44.1968 57.5588M27.1757 64.3432L44.1968 57.5588M44.1968 57.5588C48.8066 53.079 51.1405 47.4134 51.1405 40.3354M44.1968 57.5588L51.1405 40.3354M51.1405 40.3354C51.1405 35.6874 49.207 30.2234 44.8907 23.8701L51.1405 40.3354Z"
@@ -378,7 +379,7 @@
         </div>
         <div class="tableline__text">
           <h3 class="tableline__text-border">Сохранность</h3>
-          <p>ПРОДУКЦИЯ МОЖЕТ ХРАНИТЬСЯ В ТАКИХ ПАКЕТАХ ДОСТАТОЧНО ДОЛГО</p>
+          <p  class="tableline__text-ml">ПРОДУКЦИЯ МОЖЕТ ХРАНИТЬСЯ<br>В ТАКИХ ПАКЕТАХ ДОСТАТОЧНО ДОЛГО</p>
         </div>
       </div>
     </section>
@@ -505,7 +506,24 @@
             СРОК
             ХРАНЕНИЯ)</p>
           <div class="view__content view__content-down"><img src="./css/img/package-black-gorizontal.png" alt="Package"
-              class="view__img-gor"></div>
+              class="view__img-gor">
+              <svg width="843" height="843" viewBox="0 0 843 843" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_2_52)">
+                  <circle cx="250.5" cy="250.5" r="250.5" transform="matrix(1 0 0 -1 171 672)" fill="url(#paint0_linear_2_52)" />
+                </g>
+                <defs>
+                  <filter id="filter0_f_2_52" x="0.0599976" y="0.0599976" width="842.88" height="842.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                    <feGaussianBlur stdDeviation="85.47" result="effect1_foregroundBlur_2_52" />
+                  </filter>
+                  <linearGradient id="paint0_linear_2_52" x1="250.5" y1="0" x2="250.5" y2="501" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FF814A" />
+                    <stop offset="1" stop-color="#FF7A00" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
           <p class="view__bigText view__bigText-second">Freeman</p>
           <div class="container-three view__info">
             <p class="view__info-big">Sachet</p>
@@ -542,6 +560,7 @@
             </div>
           </div>
           <img src="./css/img/circle-black.png" class="circulation__circle">
+          <img src="./css/img/package-white-1.png" class="circulation__package circulation__package-null">
           <img src="./css/img/package-white-1.png" class="circulation__package circulation__package-first">
           <img src="./css/img/package-white-2.png" class="circulation__package circulation__package-second">
           <img src="./css/img/package-white-3.png" class="circulation__package circulation__package-third">
