@@ -641,7 +641,7 @@
         </div>
       </div>
       <div class="partners__img">
-        <img src="./css/img/package-white.png" alt="Package">
+        <img src="./css/img/package-white.png" alt="Package" class="partners__img-main">
         <img src="./css/img/package-white-shadow.png" alt="Package" class="partners__img-shadow">
       </div>
     </section>
@@ -724,7 +724,7 @@
           <div class="contactsTable__item contactsTable__item-orange">Офис</div>
           <div class="contactsTable__item contactsTable__item-grey">Г. Москва<br>Ул. Мироновская, д. 25.</div>
         </div>
-        <buttton class="btn contactsTable__btn">Заказать звонок</buttton>
+        <buttton class="btn contactsTable__btn startModal">Заказать звонок</buttton>
       </div>
       <img src="./css/img/map.jpg" alt="Map">
     </section>
@@ -767,6 +767,36 @@
       </div>
     </div>
   </footer>
+  <div class="modal modal-form">
+    <div class="modal__content">
+      <svg width="48" height="48" class="modal__close" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="23.7806" cy="23.7806" r="23.7806" fill="#090909" />
+        <rect x="13.2148" y="15.4629" width="2.74" height="27.2729" transform="rotate(-45 13.2148 15.4629)" fill="#D9D9D9" />
+        <rect x="15.8618" y="34.7471" width="2.74" height="27.2729" transform="rotate(-135 15.8618 34.7471)" fill="#D9D9D9" />
+      </svg>
+        <div class="modal__title">
+          Оставьте нам свои контактные данные и мы перезвоним Вам в ближайшее время
+        </div>
+        <form class="modal__form">
+          <input class="input input-bold" type="text" placeholder="имя*">
+          <input class="input input-half" type="text" placeholder="e-mail*">
+          <input class="input input-half" type="text" placeholder="телефон*">
+          <input class="input" type="text" placeholder="название компании*">
+          <input class="input" type="text" placeholder="Комментарий">
+          <button type="submit" class="btn forma__btn modal__btn">
+            Отправить
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.812 11.3891L9.64707 19.554L10.6522 20.5521L20.52 10.6842L10.6522 0.816406L9.64707 1.81447L17.812 9.9794H0.784338V11.3891H17.812Z"
+                fill="#DDDDDD" />
+            </svg>
+          </button>
+        </form>
+        <div class="modal__info">
+          Отправляя запрос, вы соглашаетесь с политикой обработки персональных данных
+        </div>
+    </div>
+</div>
   <script src="./js/gsap.js"></script>
   <script src="./js/swiper.min.js"></script>
   <script src="./js/script.js"></script>

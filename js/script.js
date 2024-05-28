@@ -30,17 +30,35 @@ const swiperProduction = new Swiper(".productionSlider", {
 const swiperPartners = new Swiper(".partnersSlider", {
   loop: true,
   allowTouchMove: true,
-  slidesPerView: "auto"
+  slidesPerView: "auto",
 });
 
 const swiperWorks = new Swiper(".worksSlider", {
   loop: true,
   allowTouchMove: true,
   slidesPerView: "auto",
-  spaceBetween: 40,
+  spaceBetween: 20,
+  breakpoints: {
+    1362: {
+      spaceBetween: 30,
+    },
+    1920: {
+      spaceBetween: 40,
+    },
+  },
 });
 
+// Модальное окно
+const btns = document.querySelectorAll(".startModal"),
+  modal = document.querySelector(".modal");
+btns.forEach((btn) => btn.addEventListener("click", () => openModal(modal)));
 
+function openModal(modal) {
+  modal.classList.add("open");
+  modal.addEventListener("click", function (e) {
+    if (e.target == modal || e.target.closest(".modal__close")) modal.classList.remove("open");
+  });
+}
 
 // Бургерное меню
 // const burger = document.querySelector(".burger"),
@@ -52,4 +70,3 @@ const swiperWorks = new Swiper(".worksSlider", {
 //   menu.classList.toggle("open");
 //   burger.classList.toggle("active");
 // });
-
