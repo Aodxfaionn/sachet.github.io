@@ -55,18 +55,28 @@ btns.forEach((btn) => btn.addEventListener("click", () => openModal(modal)));
 
 function openModal(modal) {
   modal.classList.add("open");
+  document.querySelector("body").classList.add("fixed");
   modal.addEventListener("click", function (e) {
-    if (e.target == modal || e.target.closest(".modal__close")) modal.classList.remove("open");
+    if (e.target == modal || e.target.closest(".close")) {
+      document.querySelector("body").classList.remove("fixed");
+      modal.classList.remove("open");
+    }
   });
 }
 
 // Бургерное меню
-// const burger = document.querySelector(".burger"),
-//   contacts = document.querySelector(".header__contacts"),
-//   menu = document.querySelector(".header__menu");
+const mobuleMenu = document.querySelector(".mobuleMenu"),
+  headerMobule = document.querySelector(".headerMobule"),
+  nav = headerMobule.querySelector('.nav');
 
-// burger.addEventListener("click", () => {
-//   contacts.classList.toggle("open");
-//   menu.classList.toggle("open");
-//   burger.classList.toggle("active");
-// });
+mobuleMenu.addEventListener("click", () => {
+  headerMobule.classList.toggle("open");
+  mobuleMenu.classList.toggle("open");
+  openModal(headerMobule);
+  nav.addEventListener('click', function(e) {
+    if (e.target.closest('a')) {
+      document.querySelector("body").classList.remove("fixed");
+      headerMobule.classList.remove("open");
+    }
+  })
+});

@@ -28,15 +28,60 @@
         </ul>
       </nav>
       <a href="tel:+7499537575" class="header__tel">+7 (499) 653 75 75</a>
+      <svg class="mobuleMenu" width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="27" height="3" rx="1.5" fill="#1E1E1E" />
+        <rect y="8" width="27" height="3" rx="1.5" fill="#1E1E1E" />
+        <rect y="16" width="27" height="3" rx="1.5" fill="#1E1E1E" />
+      </svg>
     </div>
   </header>
+  <div class="headerMobule">
+    <div class="headerMobuleContainer">
+      <div class="container header">
+        <div class="header__name">
+          <p class="square">F</p>
+          <p>freeman</p>
+        </div>
+        <svg width="39" height="39" class="close" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="8.48535" y="27.5771" width="27" height="3" rx="1.5" transform="rotate(-45 8.48535 27.5771)"
+            fill="#1E1E1E" />
+          <rect x="27.5771" y="29.6982" width="27" height="3" rx="1.5" transform="rotate(-135 27.5771 29.6982)"
+            fill="#1E1E1E" />
+        </svg>
+      </div>
+      <div class="headerMobule__content">
+        <nav>
+          <ul class="nav headerMobule__nav">
+            <li class="nav__item"><a href="#product">Продукция</a></li>
+            <li class="nav__item"><a href="#specially">Особенности</a></li>
+            <li class="nav__item"><a href="#partners">Партнеры</a></li>
+            <li class="nav__item"><a href="#order">Заказ</a></li>
+            <li class="nav__item"><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="headerMobule__contacts">
+          <a href="mailto:sachet@freeman.su">sachet@freeman.su</a>
+          <a href="tel:+7499537575">+7 (499) 653 75 75</a>
+        </div>
+      </div>
+      <img src="./css/img/star-black.png" class="headerMobule__img headerMobule__img-star">
+      <img src="./css/img/package-black-3.png" class="headerMobule__img headerMobule__img-black">
+      <div class="headerMobule__imgContainer"><img src="./css/img/img-center.png"
+          class="headerMobule__img headerMobule__img-white">
+        <img src="./css/img/package-black-shadow.png" class="headerMobule__img headerMobule__img-shadow">
+      </div>
+      <img src="./css/img/subtract-1.png" class="headerMobule__img headerMobule__img-substract">
+    </div>
+  </div>
   <main>
     <section class="main">
       <div class="container">
         <img src="./css/img/sachet.png" class="main__sc" />
         <div class="main__imgs">
           <img src="./css/img/img-center.png" class="main__imgCenter" />
+          <img src="./css/img/img-center.png" class="main__imgCenter-copy" />
           <img src="./css/img/shadow.png" class="main__shadow" />
+          <img src="./css/img/shadow.png" class="main__shadow-copy" />
           <img src="./css/img/subtract-1.png" class="main__substract" />
           <div class="ellipse">
             <svg width="686" height="686" viewBox="0 0 686 686" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,8 +103,14 @@
           <p class="main__texts-light">Производство Саше упаковки</p>
         </div>
         <div class="socials">
-          <a href=""><img src="./css/img/star-1.png" alt="Социальные сети" /></a>
-          <a href=""><img src="./css/img/star-2.png" alt="Социальные сети" /></a>
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" fill="none">
+              <path fill="#222"
+                d="m11.043.855 2.378 8.333 8.405-2.107-6.027 6.225 6.027 6.226-8.405-2.107-2.378 8.332-2.378-8.332L.26 19.532l6.027-6.226L.26 7.081l8.405 2.107L11.043.855Z" />
+            </svg></a>
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none">
+              <path fill="#313131"
+                d="m11.206.519 4.119 10.073 6.664 8.603-10.783-1.47-10.783 1.47 6.664-8.604L11.206.52Z" />
+            </svg></a>
         </div>
       </div>
     </section>
@@ -106,25 +157,33 @@
             </div>
             <div class="swiper-slide">
               <div class="slide">
-                <div>
+                <div class="slide__img">
                   <img src="./css/img/package-1.png" class="package-one" alt="Package" />
                   <img src="./css/img/package-2.png" class="package-two" alt="Package" />
                 </div>
-                <div>
-                  <h3 class="slide__title">Производство пленки</h3>
-                  <p>текст 2</p>
+                <div class="slide__text">
+                  <h3 class="slide__title">Производство пленки 2</h3>
+                  <p>
+                    МЫ МОЖЕМ ИЗГОТАВЛИВАТЬ ПАКЕТЫ САШЕ ИЗ ЛЮБЫХ
+                    ТЕРМОСВАРИВАЕМЫХ ПЛЕНОК: С БУМАЖНЫМ СЛОЕМ, С
+                    ФОЛЬГИРОВАННЫМ СЛОЕМ, С МЕТАЛЛИЗИРОВАНЫМ ПОЛИМЕРНЫМ СЛОЕМ
+                  </p>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide">
-                <div>
+                <div class="slide__img">
                   <img src="./css/img/package-1.png" class="package-one" alt="Package" />
                   <img src="./css/img/package-2.png" class="package-two" alt="Package" />
                 </div>
-                <div>
-                  <h3 class="slide__title">Производство пленки</h3>
-                  <p>текст 3</p>
+                <div class="slide__text">
+                  <h3 class="slide__title">Производство пленки 3</h3>
+                  <p>
+                    МЫ МОЖЕМ ИЗГОТАВЛИВАТЬ ПАКЕТЫ САШЕ ИЗ ЛЮБЫХ
+                    ТЕРМОСВАРИВАЕМЫХ ПЛЕНОК: С БУМАЖНЫМ СЛОЕМ, С
+                    ФОЛЬГИРОВАННЫМ СЛОЕМ, С МЕТАЛЛИЗИРОВАНЫМ ПОЛИМЕРНЫМ СЛОЕМ
+                  </p>
                 </div>
               </div>
             </div>
@@ -319,7 +378,7 @@
           </svg>
         </div>
         <div class="fasovka__view">
-          <div  class="fasovka__left">
+          <div class="fasovka__left">
             <svg width="53" height="60" viewBox="0 0 53 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="26.7613" cy="7.01325" r="6.92731" fill="#FBFBFB" />
               <circle cx="26.7613" cy="29.8307" r="6.92731" fill="#FBFBFB" />
@@ -344,7 +403,7 @@
             <p class="fasovka__info">НАПОЛЕНИЕ СУХОГО ПРОДУКТА В ПАКЕТЫ ОТ 0,5Г ДО 5Г</p>
           </div>
           <p class="fasovka__bigText">Sachet</p>
-          <div  class="fasovka__right">
+          <div class="fasovka__right">
             <svg width="54" height="68" viewBox="0 0 54 68" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M9.46459 23.8701L9.465 23.8695C13.4625 17.9857 19.3407 11.5775 27.1758 4.64894C35.0108 11.5773 40.8903 17.9855 44.8903 23.8695L9.46459 23.8701ZM9.46459 23.8701C5.1455 30.2237 3.21098 35.6877 3.21098 40.3354M9.46459 23.8701L3.21098 40.3354M3.21098 40.3354C3.21098 47.4134 5.54492 53.079 10.1547 57.5587M3.21098 40.3354L10.1547 57.5587M10.1547 57.5587C14.8136 62.0862 20.4306 64.3432 27.1757 64.3432M10.1547 57.5587L27.1757 64.3432M27.1757 64.3432C33.9208 64.3432 39.5379 62.0862 44.1968 57.5588M27.1757 64.3432L44.1968 57.5588M44.1968 57.5588C48.8066 53.079 51.1405 47.4134 51.1405 40.3354M44.1968 57.5588L51.1405 40.3354M51.1405 40.3354C51.1405 35.6874 49.207 30.2234 44.8907 23.8701L51.1405 40.3354Z"
@@ -379,7 +438,7 @@
         </div>
         <div class="tableline__text">
           <h3 class="tableline__text-border">Сохранность</h3>
-          <p  class="tableline__text-ml">ПРОДУКЦИЯ МОЖЕТ ХРАНИТЬСЯ<br>В ТАКИХ ПАКЕТАХ ДОСТАТОЧНО ДОЛГО</p>
+          <p class="tableline__text-ml">ПРОДУКЦИЯ МОЖЕТ ХРАНИТЬСЯ<br>В ТАКИХ ПАКЕТАХ ДОСТАТОЧНО ДОЛГО</p>
         </div>
       </div>
     </section>
@@ -507,23 +566,26 @@
             ХРАНЕНИЯ)</p>
           <div class="view__content view__content-down"><img src="./css/img/package-black-gorizontal.png" alt="Package"
               class="view__img-gor">
-              <svg width="843" height="843" viewBox="0 0 843 843" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g filter="url(#filter0_f_2_52)">
-                  <circle cx="250.5" cy="250.5" r="250.5" transform="matrix(1 0 0 -1 171 672)" fill="url(#paint0_linear_2_52)" />
-                </g>
-                <defs>
-                  <filter id="filter0_f_2_52" x="0.0599976" y="0.0599976" width="842.88" height="842.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                    <feGaussianBlur stdDeviation="85.47" result="effect1_foregroundBlur_2_52" />
-                  </filter>
-                  <linearGradient id="paint0_linear_2_52" x1="250.5" y1="0" x2="250.5" y2="501" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#FF814A" />
-                    <stop offset="1" stop-color="#FF7A00" stop-opacity="0" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
+            <svg width="843" height="843" viewBox="0 0 843 843" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_f_2_52)">
+                <circle cx="250.5" cy="250.5" r="250.5" transform="matrix(1 0 0 -1 171 672)"
+                  fill="url(#paint0_linear_2_52)" />
+              </g>
+              <defs>
+                <filter id="filter0_f_2_52" x="0.0599976" y="0.0599976" width="842.88" height="842.88"
+                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                  <feGaussianBlur stdDeviation="85.47" result="effect1_foregroundBlur_2_52" />
+                </filter>
+                <linearGradient id="paint0_linear_2_52" x1="250.5" y1="0" x2="250.5" y2="501"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FF814A" />
+                  <stop offset="1" stop-color="#FF7A00" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
           <p class="view__bigText view__bigText-second">Freeman</p>
           <div class="container-three view__info">
             <p class="view__info-big">Sachet</p>
@@ -731,7 +793,7 @@
   </main>
   <footer class="footer">
     <div class="container-two">
-      <a href="https://inty.plus/" class="footer__copyright">
+      <a href="https://inty.plus/" class="footer__copyright" target="_blank">
         <img src="./css/img/infinity.png">
       </a>
       <div class="footer-flex">
@@ -769,34 +831,37 @@
   </footer>
   <div class="modal modal-form">
     <div class="modal__content">
-      <svg width="48" height="48" class="modal__close" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="48" height="48" class="close modal__close" viewBox="0 0 48 48" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
         <circle cx="23.7806" cy="23.7806" r="23.7806" fill="#090909" />
-        <rect x="13.2148" y="15.4629" width="2.74" height="27.2729" transform="rotate(-45 13.2148 15.4629)" fill="#D9D9D9" />
-        <rect x="15.8618" y="34.7471" width="2.74" height="27.2729" transform="rotate(-135 15.8618 34.7471)" fill="#D9D9D9" />
+        <rect x="13.2148" y="15.4629" width="2.74" height="27.2729" transform="rotate(-45 13.2148 15.4629)"
+          fill="#D9D9D9" />
+        <rect x="15.8618" y="34.7471" width="2.74" height="27.2729" transform="rotate(-135 15.8618 34.7471)"
+          fill="#D9D9D9" />
       </svg>
-        <div class="modal__title">
-          Оставьте нам свои контактные данные и мы перезвоним Вам в ближайшее время
-        </div>
-        <form class="modal__form">
-          <input class="input input-bold" type="text" placeholder="имя*">
-          <input class="input input-half" type="text" placeholder="e-mail*">
-          <input class="input input-half" type="text" placeholder="телефон*">
-          <input class="input" type="text" placeholder="название компании*">
-          <input class="input" type="text" placeholder="Комментарий">
-          <button type="submit" class="btn forma__btn modal__btn">
-            Отправить
-            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M17.812 11.3891L9.64707 19.554L10.6522 20.5521L20.52 10.6842L10.6522 0.816406L9.64707 1.81447L17.812 9.9794H0.784338V11.3891H17.812Z"
-                fill="#DDDDDD" />
-            </svg>
-          </button>
-        </form>
-        <div class="modal__info">
-          Отправляя запрос, вы соглашаетесь с политикой обработки персональных данных
-        </div>
+      <div class="modal__title">
+        Оставьте нам свои контактные данные и мы перезвоним Вам в ближайшее время
+      </div>
+      <form class="modal__form">
+        <input class="input input-bold" type="text" placeholder="имя*">
+        <input class="input input-half" type="text" placeholder="e-mail*">
+        <input class="input input-half" type="text" placeholder="телефон*">
+        <input class="input" type="text" placeholder="название компании*">
+        <input class="input" type="text" placeholder="Комментарий">
+        <button type="submit" class="btn forma__btn modal__btn">
+          Отправить
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M17.812 11.3891L9.64707 19.554L10.6522 20.5521L20.52 10.6842L10.6522 0.816406L9.64707 1.81447L17.812 9.9794H0.784338V11.3891H17.812Z"
+              fill="#DDDDDD" />
+          </svg>
+        </button>
+      </form>
+      <div class="modal__info">
+        Отправляя запрос, вы соглашаетесь с политикой обработки персональных данных
+      </div>
     </div>
-</div>
+  </div>
   <script src="./js/gsap.js"></script>
   <script src="./js/swiper.min.js"></script>
   <script src="./js/script.js"></script>
