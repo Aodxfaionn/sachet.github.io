@@ -58,6 +58,10 @@
   font-weight: 400;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -796,11 +800,11 @@ section {
 .fasovka__img-right {
   width: 382px;
   position: absolute;
-  left: -21%;
-  top: 28%;
-  height: 70%;
+  left: -34%;
+  top: 9%;
+  height: 100%;
   z-index: -1;
-  transform: rotate(-32deg);
+  transform: rotate(-23deg) scale(0.7);
 }
 .fasovka__info {
   width: 58%;
@@ -826,6 +830,7 @@ section {
 }
 .napkin__hand {
   position: absolute;
+  z-index: 1;
 }
 .napkin__hand-left {
   left: 0;
@@ -962,11 +967,10 @@ section {
   width: 150%;
   height: 1px;
   position: absolute;
-  bottom: 50%;
-  left: -19%;
+  bottom: 40%;
+  left: -25%;
   z-index: 1;
   background: linear-gradient(90deg, rgb(190, 190, 190) 0%, rgb(244, 242, 242) 85%);
-  transform: rotate(-39deg);
 }
 
 .view {
@@ -978,7 +982,7 @@ section {
   z-index: -1;
 }
 .view__black-first {
-  top: 5%;
+  top: 9%;
 }
 .view__black-second {
   bottom: -17%;
@@ -1114,7 +1118,8 @@ section {
 }
 .view__circle {
   position: absolute;
-  left: 20%;
+  left: 19%;
+  top: 0%;
   z-index: -1;
 }
 .view__info {
@@ -2346,7 +2351,7 @@ section {
     width: 700px;
   }
   .worksTable {
-    height: 380px;
+    height: 507px;
   }
   .worksSlider {
     bottom: 410px;
@@ -3201,7 +3206,6 @@ section {
     margin-top: 370px;
   }
   .worksTable {
-    height: 505px;
     position: relative;
     left: -30px;
   }
@@ -3967,4 +3971,7 @@ section {
     right: calc((100% - 34px) / 2);
     top: -60px;
   }
+}
+.fasovka__left svg, .fasovka__right svg {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */
