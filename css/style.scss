@@ -17,70 +17,62 @@ $font-dark: #303030;
 
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/./fonts/Inter-Thin.woff2") format("woff2")
-    url("./fonts/Inter-Thin.woff") format("woff");
+  src: url("./fonts/./fonts/Inter-Thin.woff2") format("woff2") url("./fonts/Inter-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-ExtraLight.woff2") format("woff2")
-    url("./fonts/Inter-ExtraLight.woff") format("woff");
+  src: url("./fonts/Inter-ExtraLight.woff2") format("woff2") url("./fonts/Inter-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Light.woff2") format("woff2")
-    url("./fonts/Inter-Light.woff") format("woff");
+  src: url("./fonts/Inter-Light.woff2") format("woff2") url("./fonts/Inter-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Regular.woff2") format("woff2")
-    url("./fonts/Inter-Regular.woff") format("woff");
+  src: url("./fonts/Inter-Regular.woff2") format("woff2") url("./fonts/Inter-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Medium.woff2") format("woff2")
-    url("./fonts/Inter-Medium.woff") format("woff");
+  src: url("./fonts/Inter-Medium.woff2") format("woff2") url("./fonts/Inter-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-SemiBold.woff2") format("woff2")
-    url("./fonts/Inter-SemiBold.woff") format("woff");
+  src: url("./fonts/Inter-SemiBold.woff2") format("woff2") url("./fonts/Inter-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Bold.woff2") format("woff2")
-    url("./fonts/Inter-Bold.woff") format("woff");
+  src: url("./fonts/Inter-Bold.woff2") format("woff2") url("./fonts/Inter-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-ExtraBold.woff2") format("woff2")
-    url("./fonts/Inter-ExtraBold.woff") format("woff");
+  src: url("./fonts/Inter-ExtraBold.woff2") format("woff2") url("./fonts/Inter-ExtraBold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Inter";
-  src: url("./fonts/Inter-Black.woff2") format("woff2")
-    url("./fonts/Inter-Black.woff") format("woff");
+  src: url("./fonts/Inter-Black.woff2") format("woff2") url("./fonts/Inter-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Krona One";
-  src: url("./fonts/KronaOne-Regular.woff2") format("woff2"),
+  src:
+    url("./fonts/KronaOne-Regular.woff2") format("woff2"),
     url("./fonts/KronaOne-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -189,7 +181,9 @@ section {
       color: #272727;
       transition: 0.4s;
       &:hover {
-        text-shadow: 0 0 0.65px #272727, 0 0 0.65px #272727;
+        text-shadow:
+          0 0 0.65px #272727,
+          0 0 0.65px #272727;
       }
     }
   }
@@ -600,11 +594,7 @@ section {
     padding: 60px 90px;
     display: flex;
     align-items: end;
-    background: linear-gradient(
-      350deg,
-      #ededed 0%,
-      rgba(221, 221, 221, 0) 100%
-    );
+    background: linear-gradient(350deg, #ededed 0%, rgba(221, 221, 221, 0) 100%);
     font-weight: 600;
     font-size: 51px;
     line-height: 102%;
@@ -667,11 +657,7 @@ section {
   @include flex;
   border: 0;
   outline: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 128, 61, 1) 0%,
-    rgba(0, 0, 0, 1) 55%
-  );
+  background: linear-gradient(90deg, rgba(255, 128, 61, 1) 0%, rgba(0, 0, 0, 1) 55%);
   font-weight: 300;
   font-size: 26px;
   line-height: 83%;
@@ -960,11 +946,7 @@ section {
     bottom: 40%;
     left: -25%;
     z-index: 1;
-    background: linear-gradient(
-      90deg,
-      rgba(190, 190, 190, 1) 0%,
-      rgba(244, 242, 242, 1) 85%
-    );
+    background: linear-gradient(90deg, rgba(190, 190, 190, 1) 0%, rgba(244, 242, 242, 1) 85%);
   }
 }
 
@@ -1576,11 +1558,7 @@ section {
       border: 1.41px solid #ededed;
       border-left: 18px solid #1b1c20;
       border-right: 0;
-      background: linear-gradient(
-        91deg,
-        #1b1c20 -7%,
-        rgba(217, 217, 217, 0) 7%
-      );
+      background: linear-gradient(91deg, #1b1c20 -7%, rgba(217, 217, 217, 0) 7%);
       font-weight: 600;
       font-size: 19px;
       text-transform: uppercase;
@@ -1590,11 +1568,7 @@ section {
       border: 1.41px solid #ededed;
       border-left: 18px solid #ff803d;
       border-right: 0;
-      background: linear-gradient(
-        88deg,
-        #ff803d -2%,
-        rgba(217, 217, 217, 0) 7%
-      );
+      background: linear-gradient(88deg, #ff803d -2%, rgba(217, 217, 217, 0) 7%);
       font-weight: 600;
       font-size: 19px;
       text-transform: uppercase;
@@ -1939,7 +1913,7 @@ section {
     bottom: -15%;
   }
   .application__title {
-    width: 366px;
+    width: 362px;
     height: 268px;
     margin-left: 265px;
     padding: 34px 70px;
@@ -2118,6 +2092,15 @@ section {
   .seam__num {
     font-size: 58px;
   }
+  .seam__num-one {
+    top: 8px;
+  }
+  .seam__num-two {
+    left: 60px;
+  }
+  .seam__num-three {
+    right: 55px;
+  }
   .seam__info > p {
     width: 180px;
     font-size: 16px;
@@ -2159,6 +2142,9 @@ section {
   }
   .view__info-big {
     font-size: 90px;
+  }
+  .view__content-line:after {
+    bottom: -92%;
   }
   .circulation__title {
     font-size: 25px;
@@ -2347,6 +2333,7 @@ section {
   }
   .order__bigText {
     font-size: 259px;
+    text-align: center;
   }
   .forma {
     width: 350px;
@@ -2396,6 +2383,9 @@ section {
     width: 215px;
     left: 26%;
     top: 22%;
+  }
+  .order > svg {
+    bottom: -36%;
   }
   .contacts {
     margin-top: 305px;
@@ -2644,14 +2634,13 @@ section {
     position: absolute;
     bottom: -78px;
     left: unset;
-    margin-left: 20px;
   }
   .main__texts-light {
     position: absolute;
     width: 35%;
     bottom: -192px;
     left: unset;
-    margin-left: 25px;
+    margin-left: 60px;
     font-size: 16px;
   }
   .main__imgs {
@@ -2707,7 +2696,7 @@ section {
   .socials {
     position: absolute;
     bottom: 70px;
-    left: 273px;
+    left: calc((94% - 72px) / 2);
   }
   .info {
     margin-top: 145px;
@@ -2749,8 +2738,8 @@ section {
     justify-content: space-between;
     gap: 80px;
   }
-  .package-one {
-    margin-left: 20%;
+  .package-two {
+    left: 10%;
   }
   .circle {
     top: -12%;
@@ -2946,7 +2935,7 @@ section {
   .napkin__hand-left {
     width: 550px;
     top: 23%;
-    left: -23%;
+    left: -150px;
   }
   .napkin__hand-right {
     width: 550px;
@@ -2993,15 +2982,6 @@ section {
   .seam__img-rightbottom {
     width: 185px;
     top: 75%;
-  }
-  .seam__num-one {
-    top: 8px;
-  }
-  .seam__num-two {
-    left: 60px;
-  }
-  .seam__num-three {
-    right: 55px;
   }
   .view__black-first {
     width: auto;
@@ -3083,6 +3063,10 @@ section {
   .circulation {
     margin-top: 190px;
   }
+  .view .container,
+  .circulation.container-two {
+    width: 765px;
+  }
   .circulation__title {
     margin-left: -15px;
   }
@@ -3097,6 +3081,7 @@ section {
   }
   .circulation__info {
     width: 100%;
+    justify-content: start;
   }
   .circulation__info div {
     left: 2%;
@@ -3214,11 +3199,13 @@ section {
   }
   .order__img-circle {
     bottom: -20%;
+    right: 0;
     transform: rotate(-89deg);
   }
   .order__img-black {
     width: 235px;
-    left: 0%;
+    left: unset;
+    right: 330px;
     top: unset;
     bottom: 6%;
     transform: rotate(-225deg) scale(0.9);
@@ -3231,13 +3218,14 @@ section {
     transform: rotate(110deg);
   }
   .order > svg {
-    bottom: -69%;
-    left: -1%;
+    bottom: -57%;
+    left: unset;
+    right: 0;
   }
   .order > svg.order__svg-left {
     display: block;
     position: absolute;
-    top: 77%;
+    top: 94%;
     right: -100px;
     left: unset;
     bottom: unset;
@@ -3307,7 +3295,7 @@ section {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container,
   .container-two,
   .container-three {
@@ -3351,7 +3339,7 @@ section {
   }
   .headerMobule__img-star {
     width: 20px;
-    top: 106px;
+    top: 115px;
     left: 24px;
   }
   .headerMobule__content {
@@ -3377,6 +3365,7 @@ section {
     font-size: 109px;
   }
   .main__texts-black {
+    margin-left: 0;
     font-size: 26px;
   }
   .main__imgCenter {
@@ -3417,14 +3406,16 @@ section {
   .socials {
     position: absolute;
     bottom: 115px;
-    left: 37%;
+    left: calc((100% - 91px) / 2);
     transform: scale(1);
   }
   .socials a {
-    padding: 5px 3px;
+    padding: 5px;
   }
   .main__texts-light {
     bottom: -265px;
+    margin-left: 0;
+    text-align: center;
   }
   .info__text {
     width: 91%;
@@ -3439,10 +3430,9 @@ section {
   }
   .package-one {
     width: 320px;
-    margin-left: 10%;
+    margin-left: 0%;
   }
   .package-two {
-    left: -30px;
     width: 250px;
   }
   .productSlider .slide__img {
@@ -3453,6 +3443,7 @@ section {
     gap: 0;
   }
   .productSlider .slide__title {
+    width: 50%;
     margin-bottom: 20px;
   }
   .productSlider .swiper-button-next,
@@ -3504,7 +3495,7 @@ section {
     margin-top: 35px;
   }
   .propertySize__img {
-    left: 55px;
+    left: 40%;
     bottom: 5px;
   }
   .propertySize__img-back {
@@ -3559,6 +3550,7 @@ section {
     margin: 65px 0 60px 0;
   }
   .table__item p {
+    width: 100%;
     padding: 0 15px;
   }
   .fasovka {
@@ -3665,6 +3657,10 @@ section {
   .seam__num-two {
     left: 100px;
   }
+  .view .container,
+  .circulation.container-two {
+    width: 375px;
+  }
   .view__img {
     width: 100%;
     margin-top: 40px;
@@ -3693,7 +3689,7 @@ section {
   }
   .view__bigText-first {
     top: 5.5%;
-    left: -97%;
+    left: -20%;
     font-size: 190px;
   }
   .view__black-first {
@@ -3768,7 +3764,7 @@ section {
   }
   .circulation__circle {
     width: 305px;
-    margin: 90px 0 0;
+    margin: 90px auto 0;
   }
   .circulation__package-first {
     width: 280px;
@@ -3802,7 +3798,7 @@ section {
   .productionSlider__text {
     position: static;
     width: 90%;
-    margin-left: 35px;
+    margin: -6px 0 0 35px;
     border-radius: 0 32px 32px 32px;
   }
   .production__text {
@@ -3838,6 +3834,7 @@ section {
   .partners__img {
     top: -80%;
     left: -34%;
+    z-index: -1;
   }
   .worksSlider .swiper-slide {
     height: 365px;
@@ -3865,22 +3862,26 @@ section {
   .order form {
     margin: 30px 0 15px;
   }
+  .order > svg.order__svg-left {
+    top: unset;
+    bottom: -32%;
+}
   .forma__btn {
     height: 46px;
     margin-top: 85px;
   }
   .order__img-circle {
-    width: 100%;
+    width: 375px;
     bottom: 4%;
   }
   .order__img-white {
     width: 220px;
-    bottom: 19%;
+    bottom: 25%;
     right: -4%;
   }
   .order__img-black {
     width: 110px;
-    left: 0%;
+    right: 270px;
     bottom: 20%;
   }
   .order > svg {
@@ -3925,7 +3926,7 @@ section {
     margin: 27% auto 0;
   }
   .footer__img svg {
-    right: -240%;
+    right: -500px;
   }
   .modal__content {
     width: 95%;
@@ -3951,9 +3952,16 @@ section {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
+  .package-two {
+    left: -30px;
+  }
+  .propertySize__img {
+    left: 55px;
+  }
 }
 
-.fasovka__left svg, .fasovka__right svg {
+.fasovka__left svg,
+.fasovka__right svg {
   opacity: 0;
 }
