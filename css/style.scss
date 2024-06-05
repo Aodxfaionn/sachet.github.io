@@ -1116,7 +1116,6 @@ section {
   }
 }
 
-
 .circulation {
   position: relative;
   margin-top: 365px;
@@ -2181,7 +2180,7 @@ section {
     width: 750px;
     margin: 138px auto 0;
   }
-  .side-down  {
+  .side-down {
     width: 40px;
     height: 40px;
     left: 48%;
@@ -2321,6 +2320,8 @@ section {
   .order__bigText {
     font-size: 259px;
     text-align: center;
+    overflow: hidden;
+    text-wrap: nowrap;
   }
   .forma {
     width: 350px;
@@ -3341,6 +3342,9 @@ section {
     gap: 15px;
     font-size: 18px;
   }
+  .main, .product, .view, .order, .contacts {
+    overflow-x: hidden;
+  }
   .main .container {
     width: 100%;
   }
@@ -3854,7 +3858,7 @@ section {
   .order > svg.order__svg-left {
     top: unset;
     bottom: -32%;
-}
+  }
   .forma__btn {
     height: 46px;
     margin-top: 85px;
@@ -3881,6 +3885,7 @@ section {
   }
   .contacts__bigText {
     margin: 30px 0 0 4px;
+    text-wrap: nowrap;
     font-size: 136px;
   }
   .contacts__connection {
@@ -3893,7 +3898,8 @@ section {
   .contactsTable__btn {
     top: 0;
   }
-  .contactsTable > div, .contactsTable__item {
+  .contactsTable > div,
+  .contactsTable__item {
     width: 100%;
   }
   .contactsTable__item-black,
@@ -3957,7 +3963,7 @@ section {
   }
   .footer__img svg {
     right: -700px;
-}
+  }
 }
 
 .fasovka__left svg,
