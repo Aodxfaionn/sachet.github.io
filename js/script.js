@@ -11,6 +11,15 @@ const productSlider = new Swiper(".productsSlider", {
       allowTouchMove: false,
     },
   },
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      opacity: 0,
+    },
+    next: {
+      opacity: 0,
+    },
+  },
 });
 
 const swiperProduction = new Swiper(".productionSlider", {
@@ -84,7 +93,6 @@ mobuleMenu.addEventListener("click", () => {
 // Анимация
 gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, ScrollSmoother);
 
-// create the scrollSmoother before your scrollTriggers
 ScrollSmoother.create({
   wrapper: '#smooth-wrapper',
   content: '#smooth-content',
@@ -216,7 +224,7 @@ gsap.from(".slide__img", {
   y: -200,
   x: -200,
   scale: 0.1,
-  opacity: 0,
+  // opacity: 0,
   duration: 1.2,
 });
 gsap.from(".circle", {
@@ -636,67 +644,73 @@ gsap.to(".fasovka__data p", {
   duration: 0.9,
 });
 if(window.innerWidth < 1362) {
-  gsap.to(".fasovka__data svg:first-of-type", {
+  gsap.from(".fasovka__left svg", {
     scrollTrigger: {
       trigger: ".fasovka",
       // markers: true,
       start: "top top",
     },
-    x: 268,
-    y: 201,
+  opacity: 0,
+    x: -268,
+    y: -201,
     duration: 0.9,
   });
-  gsap.to(".fasovka__data svg:last-of-type", {
+  gsap.from(".fasovka__right svg", {
     scrollTrigger: {
       trigger: ".fasovka",
       // markers: true,
       start: "top top",
     },
-    x: -259,
-    y: 1016,
+  opacity: 0,
+    x: 259,
+    y: -1016,
     duration: 0.9,
   });
 } 
-else if(window.innerWidth > 1362 && window.innerWidth < 1920) {
-  gsap.to(".fasovka__data svg:first-of-type", {
+else if(window.innerWidth > 1362 && window.innerWidth < 1919) {
+  gsap.from(".fasovka__left svg", {
     scrollTrigger: {
       trigger: ".fasovka",
       // markers: true,
       start: "top top",
     },
-    x: -106,
-    y: 316,
+  opacity: 0,
+    x: 106,
+    y: -316,
     duration: 0.9,
   });
-  gsap.to(".fasovka__data svg:last-of-type", {
+  gsap.from(".fasovka__right svg", {
     scrollTrigger: {
       trigger: ".fasovka",
       // markers: true,
       start: "top top",
     },
-    x: 148,
-    y: 307,
+  opacity: 0,
+    x: -148,
+    y: -307,
     duration: 0.9,
   });
 } else {
-gsap.to(".fasovka__data svg:first-of-type", {
+gsap.from(".fasovka__left svg", {
   scrollTrigger: {
     trigger: ".fasovka",
     // markers: true,
     start: "top top",
   },
-  x: -127,
-  y: 443,
+  opacity: 0,
+  x: 127,
+  y: -443,
   duration: 0.9,
 });
-gsap.to(".fasovka__data svg:last-of-type", {
+gsap.from(".fasovka__right svg", {
   scrollTrigger: {
     trigger: ".fasovka",
     // markers: true,
     start: "top top",
   },
-  x: 160,
-  y: 443,
+  opacity: 0,
+  x: -160,
+  y: -443,
   duration: 0.9,
 });
 }
