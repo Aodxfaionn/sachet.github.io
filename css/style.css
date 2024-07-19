@@ -658,7 +658,7 @@ section {
 .propertySize__star {
   width: 32%;
   position: relative;
-  left: -18px;
+  left: 0;
   bottom: 45px;
 }
 
@@ -2120,6 +2120,10 @@ section {
   cursor: pointer;
 }
 
+.modal__form > div {
+  width: 46%;
+}
+
 .order__svg-left {
   display: block;
 }
@@ -3540,7 +3544,6 @@ section {
   .propertySize__star {
     width: 29%;
     position: relative;
-    left: 6px;
     bottom: 31px;
   }
 

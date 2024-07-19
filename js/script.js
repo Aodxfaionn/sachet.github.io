@@ -79,7 +79,7 @@ mobuleMenu.addEventListener("click", () => {
   mobuleMenu.classList.toggle("open");
   openModal(headerMobule);
   nav.addEventListener("click", function (e) {
-    if (e.target.closest("a"))  headerMobule.classList.remove("open");
+    if (e.target.closest("a")) headerMobule.classList.remove("open");
   });
 });
 
