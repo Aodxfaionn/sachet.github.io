@@ -63,6 +63,7 @@ const btns = document.querySelectorAll(".startModal"),
 btns.forEach((btn) => btn.addEventListener("click", () => openModal(modal)));
 
 function openModal(modal) {
+  document.querySelector('#smooth-content').style.transform = 'none';
   modal.classList.add("open");
   modal.addEventListener("click", function (e) {
     if (e.target == modal || e.target.closest(".close")) modal.classList.remove("open");
