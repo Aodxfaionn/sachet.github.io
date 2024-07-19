@@ -1624,7 +1624,7 @@ function startAnimation() {
     delay: 0.1,
     duration: 1.5,
   });
-  gsap.from(".forma__btn", {
+  gsap.from(".order .forma__btn", {
     scrollTrigger: {
       trigger: ".works",
       // markers: true,
@@ -1645,7 +1645,7 @@ function startAnimation() {
     delay: 0.5,
     duration: 0.7,
   });
-  gsap.from(".input", {
+  gsap.from(".order .input", {
     scrollTrigger: {
       trigger: ".works",
       // markers: true,
