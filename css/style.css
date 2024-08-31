@@ -2151,6 +2151,10 @@ section {
   position: relative;
 }
 
+.modal .forma__error {
+  width: 50%;
+}
+
 @media (max-width: 1919px) {
   .container {
     width: 94%;
